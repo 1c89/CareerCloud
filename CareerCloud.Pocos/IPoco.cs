@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CareerCloud.Pocos
 {
-    internal interface IPoco
+    public interface IPoco
     {
         [Key]
         public Guid Id { get; set; }
