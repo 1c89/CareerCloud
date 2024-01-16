@@ -16,5 +16,13 @@ namespace CareerCloud.Pocos
 
         [Column("Name")]
         public string Name { get; set; }
+
+        //Navigation properties
+        public virtual ICollection<ApplicantProfilePoco> ApplicantProfiles { get; set; }
+
+        public virtual ICollection<ApplicantWorkHistoryPoco> ApplicantWorkHistory { get; set; }
+
+        public virtual ICollection<CompanyLocationPoco> CompanyLocations { get; set; }
+
     }
 }

@@ -21,5 +21,9 @@ namespace CareerCloud.Pocos
 
         [Column("Last_Updated")] 
         public DateTime? LastUpdated { get; set; }
+
+        //Navigation properties
+        public virtual ApplicantProfilePoco ApplicantProfile { get; set; }
+
     }
 }

@@ -19,5 +19,10 @@ namespace CareerCloud.Pocos
         
         [Column("Native_Name")]
         public string NativeName { get; set; }
+        
+            //Navigation properties
+        
+        public virtual ICollection<CompanyDescriptionPoco> CompanyDescriptions { get; set; }
+
     }
 }
