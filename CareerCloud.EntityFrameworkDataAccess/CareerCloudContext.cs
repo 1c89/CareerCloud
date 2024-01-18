@@ -45,7 +45,7 @@ namespace CareerCloud.EntityFrameworkDataAccess
 
             var connectionString = configuration.GetConnectionString("DataConnection");
             
-            optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseSqlServer(connectionString).EnableDetailedErrors();
 
         }
 
